@@ -11,14 +11,14 @@ $arr1=[20,"suprava",30.5,true];
 // }
 
 //for each loop
-// foreach($arr1 as $v){
-//   echo $v ."<br>";
+// foreach($arr1 as $x){
+//   echo $x ."</br>";
 // }
 
 
 //associative array
-$arr2=[1=>"Ram","B"=>30,"C"=>"laxman"];
-// echo $arr2[B];
+$arr2=[1=>"A","B"=>30,"C"=>"laxman"];
+//  echo $arr2[1];
 
 foreach($arr2 as $k=>$v ){
   echo "$k=>$v<br>";
