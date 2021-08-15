@@ -9,10 +9,14 @@ if(isset($_POST['submit'])){
   // echo "your email id is $email and password is $password";
 
   if($email==="suprava@gmail.com" && $password==="sup"){
-    header("location:home.php");
+    header("location:home.php?id=10");
   }
   else{
-    echo "wrong email or password";
+   ?>
+<script>
+  alert("wrong username and password");
+</script>
+<?php
   }
 }
 
