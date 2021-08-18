@@ -15,9 +15,13 @@ $sql="select * from emp_table where email='$email' and password='$password'";
 $result=$con->query($sql);
 if($result->num_rows>0){
   $data=$result->fetch_assoc();
-  $emp_name=$data['empname'];
   $email=$data['email'];
-  // echo "welcome $emp_name and your email id is $email";
+  $id=$data['id'];
+
+ //Session creation
+ session_start();
+ $_SESSION['email']=$email;
+ $_SESSION['id']=$id;
   header("location:home.php");
 }
 else{
