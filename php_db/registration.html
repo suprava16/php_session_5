@@ -7,13 +7,15 @@
   <title>Document</title>
 </head>
 <body>
-  <form action="insertdata.php" method="post">
+  <h1>Registration Form</h1>
+  <form action="insertdata.php" method="post" enctype="multipart/form-data" >
     <input type="text" name="empname" id="" placeholder="enter name"><br>
     <input type="email" name="email" id="" placeholder="enter email"><br>
     <input type="text" name="phone" id="" placeholder="enter phone"><br>
     <input type="text" name="designation" id="" placeholder="enter designation"><br>
     <input type="text" name="salary" id="" placeholder="enter salary"><br>
     <input type="password" name="password" id="" placeholder="enter password"><br>
+    <input type="file" name="profile_pic"><br/>
     <input type="submit" value="REGISTER" name="register">
   </form>
 </body>

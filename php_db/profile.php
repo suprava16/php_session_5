@@ -7,7 +7,7 @@ if($con->connect_error){
 }
 
 if(isset($_SESSION['email'])){
-  echo "welcome $_SESSION[email]";
+  // echo "welcome $_SESSION[email]";
 
   $qry="select * from emp_table where id=$_SESSION[id]";
   $result=$con->query($qry);
@@ -18,13 +18,17 @@ if(isset($_SESSION['email'])){
     $phone=$data['phone'];
     $desig=$data['designation'];
     $salary=$data['salary'];
+    $profile=$data['profile'];
   }
 
 }
 
 
 ?>
-
+<div style="display:flex">
+<img src="<?php echo $profile; ?>" alt="profile pic">
+<h3> welcome <?php echo $name;?></h3>
+</div>
 <table border="1">
   <tr>
     <th>name</th>
