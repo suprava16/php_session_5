@@ -43,5 +43,8 @@ if(isset($_SESSION['email'])){
     <td><?php echo $phone;?></td>
     <td><?php echo $desig;?></td>
     <td><?php echo $salary;?></td>
+    <?php
+    echo  "<td><a href='update.php?uid=$data[id]'>update</a></td>";
+      ?> 
   </tr>
 </table>
